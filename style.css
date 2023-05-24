@@ -106,3 +106,9 @@ h1, h2, h3, h4, h5, h6 {
 .twords-wrapper li.show .twords-content { opacity: 1; pointer-events: all; scale: 1;}
 
 .twords-wrapper em { color: #589dda; }
+
+
+.twords-content ul,
+.twords-content li {
+    display: block;
+}

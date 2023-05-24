@@ -57,7 +57,43 @@
                     </div>
                 </li>
                 <li><a>REST, GET & POST</a></li>
-                <li><a>AWS</a></li>
+                <li>
+                    <a>CRUD</a>
+                    <div class="twords-content">
+                        <h1>CRUD</h1>
+                        <p>Är ett akronym för <em>Create</em>, <em>Read</em>, <em>Update</em>, <em>Delete</em> och är de grundläggande funktionerna i databashanterare.</p>
+                        <p>Det i sin tur gör det vanligt att de används i API:er för att beskriva de fyra olika typerna av anrop som går att göra.</p>
+                        <p>De fyra typerna använder i regel HTTP-metoderna:</p>
+                        <ul>
+                            <li>Create - <strong>POST</strong></li>
+                            <li>Read - <strong>GET</strong></li>
+                            <li>Update - <strong>PUT</strong></li>
+                            <li>Delete - <strong>DELETE</strong></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a>AWS</a>
+                    <div class="twords-content">
+                        <h1>AWS - Amazon Web Services</h1>
+                        <p>Mycket av internet drivs av tjänster som ligger hos Amazon. Det kan vara allt från olika typer av specialiserade servrar och databaser till olika tjänster.</p>
+                        <p>Några av de vanligaste är bl.a. "S3" som är fillagring, "Cloudfront" - som är ett cachnings-system, "Cloudwatch" som är ett loggningssystem m.m.</p>
+                        
+                        <h3>Några kategorier av tjänster som erbjuds på AWS</h3>
+                        <img src="images/aws.jpg">
+
+                        <h3>Tillhörande ord</h3>
+                        <p>
+                            <strong>IAM</strong> - Credentialssystem<br>
+                            <strong>Cloudfront</strong> - Cachningssystem<br>
+                            <strong>S3</strong> - Fillagring<br>
+                            <strong>Lambda</strong> - Serverless compute service<br>
+                            <strong>Cloudwatch</strong> - Loggning<br>
+                            <strong>Lightsail</strong> - VPS-hantering<br>
+                            <strong>SES</strong> - Mailserver<br>
+                        </p>
+                    </div>
+                </li>
                 <li>
                     <a>NodeJS</a>
                     <div class="twords-content">
@@ -70,16 +106,38 @@
 
                         <h3>Tillhörande ord</h3>
                         <p>
-                            <strong>Swagger/OpenAPI</strong> - Standard för att beskriva ett API
-                            <strong>Endpoint</strong> - En sökväg i ett API
+                            <strong>NPM</strong> - Pakethanterare för NodeJs
+                            <strong>Express</strong> - WebApp-framework
                         </p>
                     </div>
                 </li>
-                <li><a>Lambda</a></li>
-                <li><a>Cloudflare</a></li>
+                <li>
+                    <a>Lambda</a>
+                    <div class="twords-content">
+                        <h1>Lambda</h1>
+                        <p>Är en "server-computing"-tjänst från Amazon. Med detta menas att tjänsten körs enbart när ett anrop görs. Man har med andra ord inte en server som är igång och kostar en massa pengar dygnet runt, utan betalar bara för varje exekvering/anrop. Detta gör det väldigt lätt att skala upp en applikation eller skript.</p>
+                        <p>Det lämpar sig bra till micro-services och funktioner som bara behöver köras och ge ett svar tillbaka.</p>
+                        <p>Man kan exempelvis bygga en applikation som beskär och skalar om en bild och ger tillbaka den nya bilden</p>
+                        
+                        <h3>Kod</h3>
+                        Man kan skriva ett par olika kodspråk för lambda, men ett av de vanligare är Javascript/NodeJs-kod
+                    </div>
+                </li>
+                <li>
+                    <a>Cloudflare</a>
+                    <div class="twords-content">
+                        <h1>Cloudflare</h1>
+                        <p>En cachning och säkerhetstjänst för webbservrar. Skapar ett lager så att trafiken mellan en besökare och server alltid går genom cloudflares servrar.</p>
+                        <p>På så sätt kan de dels cachea innehåll, men även se till att säkerheten hålls högre och motverka DDOS-attacker.</p>
+                        <p>Eftersom inte besökaren kan se den faktiska webbservern så ökar även det säkerheten.</p>
+                        <div style="text-align: center; padding-top: 20px;">
+                            <img src="images/cloudflare.jpg">
+                        </div>
+                    </div>
+                </li>
                 <li><a>Cloudfront</a></li>
                 <li><a>CDN & S3</a></li>
-                <li><a>Lambda</a></li>
+                
                 <li><a>Ports</a></li>
                 <li><a>SSL</a></li>
                 <li><a>HTML</a></li>
