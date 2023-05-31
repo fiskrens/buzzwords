@@ -1,9 +1,7 @@
-export default function Git() {
-    const title = 'Git'
-    const name = 'Gitz'
-    
-
-    const description = (
+class UI {
+    title = 'Git'
+    name = 'Gitz'
+    description = (
         <>
             <p>Ett versionshanteringssystem som används för att hantera kod. <br />Kod sparas i s.k. <strong>"git repos"</strong> och vid varje sparning av kod gör man en "git commit" som "pushas" till repot. På så sätt får man historik, kan se vem som gjort vad samt motverkar konflikter i kod om man är flera utvecklare i samma projekt.  </p>
 
@@ -18,10 +16,6 @@ export default function Git() {
         </>
     )
 
-    return {
-        name: this.name,
-        title: title,
-        description: description
-    }
-
 }
+
+export default UI
