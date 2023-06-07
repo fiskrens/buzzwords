@@ -8,7 +8,7 @@
     {
         "id":2,
         "name":"Git",
-        "title":"Hel<strong>l</strong>o2",
-        "description":""
+        "title":"Hello2",
+        "description":"This is the <strong>description</strong>"
     }
 ]
