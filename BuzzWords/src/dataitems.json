@@ -1,10 +1,37 @@
+[
 {
   "id": 1,
-  "name": "NAMEGIT",
-  "html": "<h3>Lorem ipsum dolor</h3>\r\n<p>In nomine patriis</p>"
+  "name": "API",
+  "description": "<h1>API - Application Programming Interface</h1>\r\n<p>En ingång för att kunna göra en koppling mellan system.</p>\r\n<p>Inom webben är <strong>JSON</strong>-format vanligt i dessa APIer.</p>\r\n\r\n<h3>Exempel på API-endpoint</h3>\r\n<em>http://api.sr.se/api/v2/programs/index?channelid=164</em><br>\r\nHämtar en lista på program som sänds på Sveriges Radio P3\r\n\r\n\r\n<h3>Tillhörande ord</h3>\r\n<p>\r\n<strong>Swagger/OpenAPI</strong> - Standard för att beskriva ett API<br>\r\n<strong>Endpoint</strong> - En sökväg i ett API\r\n</p>"
 }
-{
+,{
   "id": 2,
-  "name": "NAMEGIT",
-  "html": "asdasda asd asdasdasd"
+  "name": "AWS",
+  "description": "<h1>AWS - Amazon Web Services</h1>\r\n<p>Mycket av internet drivs av tjänster som ligger hos Amazon. Det kan vara allt från olika typer av specialiserade servrar och databaser till olika tjänster.</p>\r\n<p>Några av de vanligaste är bl.a. \"S3\" som är fillagring, \"Cloudfront\" - som är ett cachnings-system, \"Cloudwatch\" som är ett loggningssystem m.m.</p>\r\n\r\n<h3>Några kategorier av tjänster som erbjuds på AWS</h3>\r\n<img src=\"images/aws.jpg\">\r\n\r\n<h3>Tillhörande ord</h3>\r\n<p>\r\n    <strong>IAM</strong> - Credentialssystem<br>\r\n    <strong>Cloudfront</strong> - Cachningssystem<br>\r\n    <strong>S3</strong> - Fillagring<br>\r\n    <strong>Lambda</strong> - Serverless compute service<br>\r\n    <strong>Cloudwatch</strong> - Loggning<br>\r\n    <strong>Lightsail</strong> - VPS-hantering<br>\r\n    <strong>SES</strong> - Mailserver<br>\r\n</p>"
 }
+,{
+  "id": 3,
+  "name": "Cloudflare",
+  "description": "<h1>Cloudflare</h1>\r\n<p>En cachning och säkerhetstjänst för webbservrar. Skapar ett lager så att trafiken mellan en besökare och server alltid går genom cloudflares servrar.</p>\r\n<p>På så sätt kan de dels cachea innehåll, men även se till att säkerheten hålls högre och motverka DDOS-attacker.</p>\r\n<p>Eftersom inte besökaren kan se den faktiska webbservern så ökar även det säkerheten.</p>\r\n<div style=\"text-align: center; padding-top: 20px;\">\r\n    <img src=\"images/cloudflare.jpg\">\r\n</div>"
+}
+,{
+  "id": 4,
+  "name": "CRUD",
+  "description": "<h1>CRUD</h1>\r\n<p>Är ett akronym för <em>Create</em>, <em>Read</em>, <em>Update</em>, <em>Delete</em> och är de grundläggande funktionerna i databashanterare.</p>\r\n<p>Det i sin tur gör det vanligt att de används i API:er för att beskriva de fyra olika typerna av anrop som går att göra.</p>\r\n<p>De fyra typerna använder i regel HTTP-metoderna:</p>\r\n<ul>\r\n    <li>Create - <strong>POST</strong></li>\r\n    <li>Read - <strong>GET</strong></li>\r\n    <li>Update - <strong>PUT</strong></li>\r\n    <li>Delete - <strong>DELETE</strong></li>\r\n</ul>"
+}
+,{
+  "id": 5,
+  "name": "Git",
+  "description": "<h1>Git</h1>\r\n<p>Ett versionshanteringssystem som används för att hantera kod. <br>Kod sparas i s.k. <strong>\"git repos\"</strong> och vid varje sparning av kod gör man en \"git commit\" som \"pushas\" till repot. På så sätt får man historik, kan se vem som gjort vad samt motverkar konflikter i kod om man är flera utvecklare i samma projekt.  </p>\r\n\r\n\r\n<p>På tjänster som <strong>Github</strong> kan man se en kalender med hur ens commits sett ut det senaste året</p>\r\n<img src=\"images/github.png\">\r\n\r\n<h3>Tillhörande ord</h3>\r\n<p>\r\n<strong>Github</strong> - En tjänst där kod kan lagras, ägs av Microsoft.<br>\r\n<strong>Gitlab</strong> - Även det en tjänst där kod lagras, men som byggs på öppen källkod och går därför att hosta själv.\r\n</p>"
+}
+,{
+  "id": 6,
+  "name": "ipsum",
+  "description": "<h1>Ipsum</h1>\r\nasdasda asd asdasdasd"
+}
+,{
+  "id": 7,
+  "name": "NodeJS",
+  "description": "<h1>NodeJS</h1>\r\n<p>Server som kör Javascript, vilket gör att man kan skriva javascript-kod både för backend och frontend.</p>\r\n<p>Blivit populär då det är lätt att sätta upp och kan utökas med flera olika libs exempelvis express</p>\r\n\r\n<h3>Exempelkod</h3>\r\n<img src=\"images/nodejs.png\">\r\n\r\n<h3>Tillhörande ord</h3>\r\n<p>\r\n    <strong>NPM</strong> - Pakethanterare för NodeJs\r\n    <strong>Express</strong> - WebApp-framework\r\n</p>"
+}
+]

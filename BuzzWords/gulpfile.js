@@ -1,6 +1,7 @@
 const { src, dest, watch, series } = require('gulp')
 const through = require('through2')
 const concat = require('gulp-concat')
+const gap = require('gulp-append-prepend');
 
 const FILE_PATHS = {
 	html: [
@@ -22,21 +23,28 @@ function createJSON() {
     return src(FILE_PATHS.html).pipe(
         through.obj((file, enc, cb) => {
             const html = file.contents.toString()
-            console.log(html)
-            const transformed = transformJson(html, 'NAMEGIT', counter)
-            const stringified = JSON.stringify(transformed, null, 2)
+            let comma = ','
+            if(counter==1) { comma = ''}
+            let filename = file.path.replace(/^.*[\\/]/, '').replace('.html','')
+            const transformed = transformJson(html, filename, counter)
+            const stringified = comma+JSON.stringify(transformed, null, 2)
             file.contents = Buffer.from(stringified)
             counter++
             cb(null, file)
         })
-    ).pipe((items) => { console.log(items)}).pipe(concat('dataitems.json')).pipe(dest('./src/'))
+    )
+    //.pipe((items) => { console.log(items)})
+    .pipe(concat('dataitems.json'))
+    .pipe(gap.prependText('['))
+    .pipe(gap.appendText(']'))
+    .pipe(dest('./src/'))
 }
 
 function transformJson(html, name, index) {
     return {
         id: index,
         name: name,
-        html: html,
+        description: html,
     }
 }
 

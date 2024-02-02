@@ -1,26 +1,32 @@
 import { useState } from 'react'
-import words from "./Items.json"
+import words from "./dataitems.json"
 import Word from "./Word.jsx"
+import GetLucky from "./GetLucky.jsx"
 
 
 export default function WordList() {
     //words = []
     const [isItemActive, setIsItemActive] = useState(false);
     const [currentItem, setCurrentItem] = useState(0);
+    const [currentRoll, setCurrentRoll] = useState(0);
 
-    
+    function rollItem() {
+        const itemId = Math.floor(Math.random() * words.length);
+        setCurrentItem(itemId)
+    }
 
     function itemActive() {
-        console.log('wjiajsdiajsd')
         setIsItemActive(true)
     }
 
     function unselectAll() {
         setCurrentItem(0)
+        setCurrentRoll(0)
     }
     
     return (
         <>
+            <GetLucky />
             <div className="twords-wrapper">
             <ul>
                 {words.map(word => {
@@ -28,7 +34,7 @@ export default function WordList() {
                 })}
             </ul>
             </div>
-            <div className={currentItem > 0 ? 'twords-backdrop show' : 'twords-backdrop'} onClick={unselectAll}>{currentItem}</div>
+            <div className={currentItem > 0 ? 'twords-backdrop show' : 'twords-backdrop'} onClick={unselectAll}></div>
         </>
     )
 
