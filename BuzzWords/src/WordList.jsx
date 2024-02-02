@@ -10,11 +10,6 @@ export default function WordList() {
     const [currentItem, setCurrentItem] = useState(0);
     const [currentRoll, setCurrentRoll] = useState(0);
 
-    function rollItem() {
-        const itemId = Math.floor(Math.random() * words.length);
-        setCurrentItem(itemId)
-    }
-
     function itemActive() {
         setIsItemActive(true)
     }
@@ -26,7 +21,7 @@ export default function WordList() {
     
     return (
         <>
-            <GetLucky />
+            <div className="padding"><GetLucky setCurrentItem={setCurrentItem} wordLength={words.length} /></div>
             <div className="twords-wrapper">
             <ul>
                 {words.map(word => {
