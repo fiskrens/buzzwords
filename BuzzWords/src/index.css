@@ -143,3 +143,10 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .padding { padding: 1vw;}
+
+
+code {
+    background: rgb(58, 58, 58);
+    border-left: 3px solid rgb(224, 133, 13);
+    padding: 10px;
+}
