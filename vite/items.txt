@@ -1,0 +1,70 @@
+* API
+* AWS
+* Cloudflare
+* CRUD
+* Git
+* NodeJs
+* Cloudfront
+CDN & S3
+Ports
+SSL
+HTML
+UX & UI
+SSH
+SFTP
+HTTP2
+CSS
+Midjourney
+ChatGPT
+Icinga
+Docker
+CI
+Icinga
+Ansible
+React
+jQuery
+MySQL
+GIS
+Cache
+Sandbox
+SOLID
+* JSON
+Cookies
+Boilerplate
+Minify & obfuscate
+MVC
+OOP
+Class & namespace
+Token
+Boolean
+Hash
+Null
+JSON
+Array
+CamelCase
+UTF-8
+Ajax
+WebStorage
+Javascript
+PHP
+DNS
+XSS
+SQL-injection
+CORS
+2FA
+Ubuntu
+Droplet
+LAMP
+MongoDB
+Ping
+CLI
+MX & A-records
+Apache
+HTTP 5xx
+HTTP 4xx
+HTTP 3xx
+Encryption
+MITM-attack
+DDOS
+NPM & Composer
+Chocolatey

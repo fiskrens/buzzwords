@@ -16,21 +16,31 @@
 }
 ,{
   "id": 4,
+  "name": "Cloudfront",
+  "description": "<h1>Cloudfront</h1>\r\n<p>Amazons tjänst för att lagra resurser utspridd över hela världen, så att när en besökare behöver komma åt en fil så hämtas den på närmaste server i ens område.</p>\r\n<p>Detta medför att laddtider minskar, eftersom man inte behöver hämta från andra sidan jordklotet, och skapar mer stabila lösningar.</p>\r\n\r\n<p>En begränsning med detta system är dock att man vill att det ska cachas länge, då det annars blir för mycket trafik av att uppdatera ut till alla noder. Det kan också ta lite tid att få ut eller ta bort en fil från alla närliggande noder, och kostnaden ökar i takt med trafik.</p>\r\n\r\n\r\n"
+}
+,{
+  "id": 5,
   "name": "CRUD",
   "description": "<h1>CRUD</h1>\r\n<p>Är ett akronym för <em>Create</em>, <em>Read</em>, <em>Update</em>, <em>Delete</em> och är de grundläggande funktionerna i databashanterare.</p>\r\n<p>Det i sin tur gör det vanligt att de används i API:er för att beskriva de fyra olika typerna av anrop som går att göra.</p>\r\n<p>De fyra typerna använder i regel HTTP-metoderna:</p>\r\n<ul>\r\n    <li>Create - <strong>POST</strong></li>\r\n    <li>Read - <strong>GET</strong></li>\r\n    <li>Update - <strong>PUT</strong></li>\r\n    <li>Delete - <strong>DELETE</strong></li>\r\n</ul>"
 }
 ,{
-  "id": 5,
+  "id": 6,
   "name": "Git",
   "description": "<h1>Git</h1>\r\n<p>Ett versionshanteringssystem som används för att hantera kod. <br>Kod sparas i s.k. <strong>\"git repos\"</strong> och vid varje sparning av kod gör man en \"git commit\" som \"pushas\" till repot. På så sätt får man historik, kan se vem som gjort vad samt motverkar konflikter i kod om man är flera utvecklare i samma projekt.  </p>\r\n\r\n\r\n<p>På tjänster som <strong>Github</strong> kan man se en kalender med hur ens commits sett ut det senaste året</p>\r\n<img src=\"images/github.png\">\r\n\r\n<h3>Tillhörande ord</h3>\r\n<p>\r\n<strong>Github</strong> - En tjänst där kod kan lagras, ägs av Microsoft.<br>\r\n<strong>Gitlab</strong> - Även det en tjänst där kod lagras, men som byggs på öppen källkod och går därför att hosta själv.\r\n</p>"
 }
 ,{
-  "id": 6,
-  "name": "ipsum",
-  "description": "<h1>Ipsum</h1>\r\nasdasda asd asdasdasd"
+  "id": 7,
+  "name": "JSON",
+  "description": "<h1>JSON</h1>\r\n<p>Ett standardiserat läsbart format på data som används för att lagra eller skicka data mellan olika system.</p>\r\n<p>Formatet lagras med attribut: värde, alltså ett värde per attribut. Attribut kan dock innehålla flera attribut, eller en array med flera värden.</p>\r\n\r\n<h3>Exempelkod</h3>\r\n<pre>\r\n{\r\n  <strong style=\"color: orange;\">\"first_name\"</strong>: <em style=\"color: lightblue;\">\"Anders\"</em>,\r\n  <strong style=\"color: orange;\">\"last_name\"</strong>: <em style=\"color: lightblue;\">\"Larsson\"</em>,\r\n  <strong style=\"color: orange;\">\"age\"</strong>: <em style=\"color: lightblue;\">36</em>,\r\n  <strong style=\"color: orange;\">\"address\"</strong>: {\r\n    <strong style=\"color: rgb(255, 115, 0);\">\"street_address\"</strong>: <em style=\"color: lightblue;\">\"Storgatan 1\"</em>,\r\n    <strong style=\"color: rgb(255, 115, 0);\">\"city\"</strong>: <em style=\"color: lightblue;\">\"Växjö\"</em>,\r\n    <strong style=\"color: rgb(255, 115, 0);\">\"state\"</strong>: <em style=\"color: lightblue;\">\"Kronoberg\"</em>,\r\n    <strong style=\"color: rgb(255, 115, 0);\">\"postal_code\"</strong>: <em style=\"color: lightblue;\">35232</em>\r\n  },\r\n  <strong style=\"color: orange;\">\"frogs\"</strong>: <strong style=\"color: purple;\">[</strong>\r\n    <em style=\"color: lightblue;\">\"Bufo punctatus\"</em>, \r\n    <em style=\"color: lightblue;\">\"Rana temporaria\"</em>,\r\n    <em style=\"color: lightblue;\">\"Epidalea calamita\"</em>\r\n  <strong style=\"color: purple;\">]</strong>\r\n}\r\n</pre>"
 }
 ,{
-  "id": 7,
+  "id": 8,
+  "name": "MITM-Attack",
+  "description": "<h1>MITM-Attack</h1>\r\n<p>Man-In-The-Middle-Attack är en metod där man kopplar in sig mellan två applikationer, vanligtvis mellan en användare och utåt mot nätverk. Detta gör att man kan avslyssna trafiken och på så sätt komma över känslig information. Man kan också ge annan information tillbaka, exempelvis så att användaren tror att de besöker en sida men det är egentligen ens egna sida man visar.</p>\r\n<p>För webben har mycket av detta löst genom HTTPS (SSL), då HTTPS-trafik krypteras och gör att även om trafik skulle hamna i orätta händer på vägen, blir det svårt att analysera den. Man kan dessutom inte påverka svaren tillbaka utan att detta märks.</p>\r\n<p>MITM bör vara ett minskande problem när det kommer till webben, men kan fortfarande vara ett problem där trafik inte är krypterad.</p>\r\n\r\n\r\n\r\n<h3>Tillhörande ord</h3>\r\n<p>\r\n<strong>HTTPS</strong> - En tjänst där kod kan lagras, ägs av Microsoft.<br>\r\n<strong>SSL</strong> - Även det en tjänst där kod lagras, men som byggs på öppen källkod och går därför att hosta själv.\r\n</p>"
+}
+,{
+  "id": 9,
   "name": "NodeJS",
   "description": "<h1>NodeJS</h1>\r\n<p>Server som kör Javascript, vilket gör att man kan skriva javascript-kod både för backend och frontend.</p>\r\n<p>Blivit populär då det är lätt att sätta upp och kan utökas med flera olika libs exempelvis express</p>\r\n\r\n<h3>Exempelkod</h3>\r\n<img src=\"images/nodejs.png\">\r\n\r\n<h3>Tillhörande ord</h3>\r\n<p>\r\n    <strong>NPM</strong> - Pakethanterare för NodeJs\r\n    <strong>Express</strong> - WebApp-framework\r\n</p>"
 }
